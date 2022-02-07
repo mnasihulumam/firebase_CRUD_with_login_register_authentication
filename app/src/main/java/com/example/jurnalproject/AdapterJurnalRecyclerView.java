@@ -33,8 +33,7 @@ public class AdapterJurnalRecyclerView extends RecyclerView.Adapter<AdapterJurna
 
         /**
          * Inisiasi View
-         * Di tutorial ini kita hanya menggunakan data String untuk tiap item
-         * dan juga view nya hanyalah satu TextView
+         
          */
         TextView tvTitle;
 
@@ -65,18 +64,14 @@ public class AdapterJurnalRecyclerView extends RecyclerView.Adapter<AdapterJurna
         holder.tvTitle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /**
-                 *  Kodingan untuk tutorial Selanjutnya :p Read detail data
-                 */
+                
             }
         });
 
         holder.tvTitle.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-                /**
-                 *  Kodingan untuk tutorial Selanjutnya :p Delete dan update data
-                 */
+                
                 final Dialog dialog = new Dialog(context);
                 dialog.setContentView(R.layout.dialog_view);
                 dialog.setTitle("Pilih Aksi");
